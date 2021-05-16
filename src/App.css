@@ -1,3 +1,9 @@
+
+/* or import tailwind in .css instead of js */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */ 
+
 * {
     border: 1px solid black;
 }

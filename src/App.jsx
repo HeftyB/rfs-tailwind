@@ -1,5 +1,7 @@
 import { hot } from 'react-hot-loader/root';
 import React, { Component } from "react";
+
+import "tailwindcss/tailwind.css"; // include tailwind directly in js file
 import "./App.css";
 
 class App extends Component {

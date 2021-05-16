@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "dist"),
     publicPath: "/",
-    filename: "main.js",
+    filename: "[name].js",
     },
   module: {
     rules: [
@@ -19,7 +19,7 @@ module.exports = {
           },
           {
             test: /\.css$/,
-            use: ["style-loader", "css-loader"]
+            use: ["style-loader", "css-loader", "postcss-loader"]
           },
           {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -39,6 +39,11 @@ module.exports = {
       return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
     }
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   devtool: "source-map",
   target: "web",
   stats: "errors-only",
@@ -48,7 +53,6 @@ module.exports = {
     port: 3000,
     hot: true,
     https: false,
-    // noInfo: true,
     open: true,
   },
 
