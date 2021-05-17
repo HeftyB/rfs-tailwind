@@ -36,6 +36,10 @@ build to /dist
 - [css-loader](https://github.com/webpack-contrib/css-loader) - css loader for webpack
 - [babel-loader](https://github.com/webpack-contrib/css-loader) - babel loader for webpack
 - [react-hot-loader](https://github.com/gaearon/react-hot-loader) - allows hot reloads on dev server
+- [tailwindcss](https://github.com/tailwindlabs/tailwindcss) - A utility first CSS framework
+- [autoprefixer](https://github.com/postcss/autoprefixer) - adds vendors prefix
+- [postcss](https://github.com/postcss/postcss) - tool that transfroms styles with js
+- [postcss-loader](https://github.com/webpack-contrib/postcss-loader) - postcss loader for webpack
 
 ## Folders
 
